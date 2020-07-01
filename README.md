@@ -8,7 +8,6 @@ This app is designed based on `JavaScript` using `jQuery`. The feature of this a
 3. Edit a ToDo  
 4. Delete a ToDo  
 
-<br />
 &nbsp;
 
 
