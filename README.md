@@ -1,7 +1,5 @@
 ## **To-Do List** - a JavaScript based project
 
-&nbsp;
-
 This app is designed based on `JavaScript` using `jQuery`. The feature of this app is:  
 1. Adding new ToDo  
 2. Mark the ToDo that is completed  
@@ -9,7 +7,6 @@ This app is designed based on `JavaScript` using `jQuery`. The feature of this a
 4. Delete a ToDo  
 
 &nbsp;
-
 
 ### 1. Adding new todo
 
@@ -74,7 +71,6 @@ function checkEmptyTodo (noTodo = true){
 }
 ```
 
-<br />
 &nbsp;
 
 
@@ -200,5 +196,6 @@ function addScrollBar(){
     }
 }
 ```
+
 
 
