@@ -8,9 +8,7 @@ This app is designed based on `JavaScript` using `jQuery`. The feature of this a
 
 &nbsp;
 
-### 1. Adding new todo
-
-&nbsp;
+### 1. Adding new todo  
 
 > Animate the input field  
 
@@ -74,9 +72,7 @@ function checkEmptyTodo (noTodo = true){
 &nbsp;
 
 
-### 2. Marking a ToDo as completed
-
-&nbsp;
+### 2. Marking a ToDo as completed  
 
 When the checkbox is pressed, the ToDo is marked as completed.
 ```jquery
@@ -88,9 +84,7 @@ The css class `completedTodo` contains some effects.
 
 &nbsp;
 
-### 3. Edit a ToDo
-
-&nbsp;
+### 3. Edit a ToDo  
 
 > Display an editable text field prefilled with the ToDo
 
@@ -134,9 +128,7 @@ $('#ulTodo').on('click', 'li button', function(event){
 &nbsp;
 
 
-### 4. Delete a ToDo
-
-&nbsp;
+### 4. Delete a ToDo  
 
 This will remove the `li` from the unordered list and refresh the list.
 ```jquery
@@ -153,9 +145,7 @@ $('#ulTodo').on('click', 'li i:nth-last-child(2)', function(){
 &nbsp;
 
 
-#### Some functionality
-
-&nbsp;
+#### Some functionality  
 
 > doneMessage()  
 
@@ -175,9 +165,7 @@ function doneMessage(msg, _callback){  // this function shows a slide up message
         })
     })
 } 
-```
-
-&nbsp;
+```  
 
 > addScrollBar() 
 
