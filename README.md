@@ -1,10 +1,10 @@
 ## **To-Do List** - a JavaScript based project
 
 This app is designed based on `JavaScript` using `jQuery`. The feature of this app is:  
-1. [Adding new ToDo](#Adding-new-ToDo)  
-2. [Mark the ToDo that is completed](#Mark-the-ToDo-that-is-completed)  
-3. [Edit a ToDo](#Edit-a-ToDo)  
-4. [Delete a ToDo](#Delete-a-ToDo)  
+1. [Adding new ToDo](#adding-new-todo)  
+2. [Mark the ToDo that is completed](#mark-the-todo-that-is-completed)  
+3. [Edit a ToDo](#edit-a-todo)  
+4. [Delete a ToDo](#delete-a-todo)  
 
 &nbsp;
 
