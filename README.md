@@ -102,7 +102,7 @@ $('#ulTodo').on('click', 'li i:nth-last-child(1)', function(event){
     $(this).remove();  // this statement should be here, donot move up. Otherwise it will be deleted and selection will not work properly
     event.stopPropagation();  // this will stop Event Bubling
 })
-```
+```  
 
 &nbsp;
 
@@ -166,7 +166,7 @@ function doneMessage(msg, _callback){  // this function shows a slide up message
     })
 } 
 ```  
-
+  
 > addScrollBar() 
 
 This function will display a scrollbar when the `ul` has more than 5 list item. 
@@ -180,5 +180,6 @@ function addScrollBar(){
     }
 }
 ```
+
 
 
