@@ -5,6 +5,7 @@ This app is designed based on `JavaScript` using `jQuery`. The feature of this a
 2. Mark the ToDo that is completed  
 3. Edit a ToDo  
 4. Delete a ToDo  
+
 &nbsp;
 
 ### 1. Adding new todo
