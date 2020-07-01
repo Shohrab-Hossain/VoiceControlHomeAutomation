@@ -5,6 +5,7 @@ This app is designed based on `JavaScript` using `jQuery`. The feature of this a
 2. Mark the ToDo that is completed  
 3. Edit a ToDo  
 4. Delete a ToDo  
+
 &nbsp;
 
 ### 1. Adding new todo
@@ -68,7 +69,7 @@ function checkEmptyTodo (noTodo = true){
         })
     }
 }
-```
+```  
 
 &nbsp;
 
@@ -83,11 +84,9 @@ $('#ulTodo').on('click', "li input[type='checkbox']", function(){
     $(this).siblings("span").toggleClass('completedTodo');
 })
 ```
-The css class `completedTodo` contains some effects.
+The css class `completedTodo` contains some effects.  
 
-<br />
 &nbsp;
-
 
 ### 3. Edit a ToDo
 
@@ -130,9 +129,8 @@ $('#ulTodo').on('click', 'li button', function(event){
     $(this).siblings("span").text($(this).siblings("input[type='text']").val()).removeClass('completedTodo');
     event.stopPropagation();  // this will stop Event Bubling
 })
-```
+```  
 
-<br />
 &nbsp;
 
 
@@ -149,9 +147,8 @@ $('#ulTodo').on('click', 'li i:nth-last-child(2)', function(){
         checkEmptyTodo($('#ulTodo li').length == 0);
     })
 })
-```
+```  
 
-<br />
 <br />
 &nbsp;
 
@@ -195,6 +192,5 @@ function addScrollBar(){
     }
 }
 ```
-
 
 
