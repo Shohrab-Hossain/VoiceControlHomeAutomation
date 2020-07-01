@@ -166,7 +166,7 @@ function doneMessage(msg, _callback){  // this function shows a slide up message
     })
 } 
 ```  
-  
+\  
 > addScrollBar() 
 
 This function will display a scrollbar when the `ul` has more than 5 list item. 
