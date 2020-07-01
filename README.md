@@ -1,6 +1,6 @@
 ## **To-Do List** - a JavaScript based project
 
-This app is designed based on **`JavaScript`** using **`jQuery`**. The feature of this app is:  
+This app is designed using **`JavaScript`** and **`jQuery`**. The feature of this app is:  
 1. [Adding new ToDo](#1-adding-new-todo)  
 2. [Mark the ToDo that is completed](#2-mark-the-todo-that-is-completed)  
 3. [Edit a ToDo](#3-edit-a-todo)  
@@ -12,7 +12,7 @@ This app is designed based on **`JavaScript`** using **`jQuery`**. The feature o
 
 > Animate the input field  
 
-There is a `Plus-Icon` in the upper right corner, which is selected by query selector `h1 i`. By clicking this icon the input field slides down.
+There is a `Plus-Icon` in the upper right corner, which is selected by query selector **`h1 i`**. By clicking this icon the input field slides down.
 ```javascript
 $('h1 i').on('click', function(){
     $('#inputContainer').slideToggle(700);
@@ -23,7 +23,7 @@ $('h1 i').on('click', function(){
 })
 ```
 
-This animation will also happen if the `To-Do List is empty` line is clicked. The query selector for this is `#noList`.
+This animation will also happen if the `To-Do List is empty` line is clicked. The query selector for this is **`#noList`**.
 ```javascript
 $('#noList').on('click', function(){
     $('h1 i').click();
@@ -34,7 +34,7 @@ $('#noList').on('click', function(){
 
 > reading text from input feild  
  
-There is a unordered list with id `#ulTodo`. To add a new To-Do the function `addNewTodo()` is called, which created a new `li` is add it to the unordered list. The `li` is created and append to the unordered list using this block of code:  
+There is a unordered list with id `#ulTodo`. To add a new To-Do the function **`addNewTodo()`** is called, which created a new `li` is add it to the unordered list. The `li` is created and append to the unordered list using this block of code:  
 ```javascript
 var inp = "<li>"                                 +
               "<input type='checkbox'>"          +
@@ -88,7 +88,7 @@ The css class `completedTodo` contains some effects.
 
 > Display an editable text field prefilled with the ToDo
 
-Let's display an editable text filled `input[type='text']`, which will be prefilled with the existing todo.
+Let's display an editable text filled **`input[type='text']`**, which will be prefilled with the existing todo.
 
 ```javascript
 $('#ulTodo').on('click', 'li i:nth-last-child(1)', function(event){
@@ -108,7 +108,7 @@ $('#ulTodo').on('click', 'li i:nth-last-child(1)', function(event){
 
 > Read edit data and update the todo
 
-A new `li` is created using the text from `input[type='text']`, and then append to the `ul` at the same position where the li previously was.
+A new **`li`** is created using the text from **`input[type='text']`**, and then append to the **`ul`** at the same position where the li previously was.
 ```javascript
 $('#ulTodo').on('click', 'li button', function(event){
     isEditOn = false;
@@ -129,7 +129,7 @@ $('#ulTodo').on('click', 'li button', function(event){
 
 ### 4. Delete a ToDo  
 
-This will remove the `li` from the unordered list and refresh the list.
+This will remove the **`li`** from the unordered list and refresh the list.
 ```javascript
 $('#ulTodo').on('click', 'li i:nth-last-child(2)', function(){
     $(this).parent().fadeOut(700, function(){
@@ -181,7 +181,6 @@ function addScrollBar(){
     }
 }
 ```
-
 
 
 
