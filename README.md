@@ -13,7 +13,7 @@ This app is designed based on `JavaScript` using `jQuery`. The feature of this a
 > Animate the input field  
 
 There is a `Plus-Icon` in the upper right corner, which is selected by query selector `h1 i`. By clicking this icon the input field slides down.
-```jquery
+```javascript
 $('h1 i').on('click', function(){
     $('#inputContainer').slideToggle(700);
     $(this).fadeOut(500, function(){
@@ -24,7 +24,7 @@ $('h1 i').on('click', function(){
 ```
 
 This animation will also happen if the `To-Do List is empty` line is clicked. The query selector for this is `#noList`.
-```jquery
+```javascript
 $('#noList').on('click', function(){
     $('h1 i').click();
 })
@@ -35,7 +35,7 @@ $('#noList').on('click', function(){
 > reading text from input feild  
  
 There is a unordered list with id `#ulTodo`. To add a new To-Do the function `addNewTodo()` is called, which created a new `li` is add it to the unordered list. The `li` is created and append to the unordered list using this block of code:  
-```jquery
+```javascript
 var inp = "<li>"                                 +
               "<input type='checkbox'>"          +
               "<span></span>"                    +
@@ -54,7 +54,7 @@ $('#ulTodo li:last-child span').text( $('#inputContainer input').val() );
 > Hiding empty list message  
 
 After adding new todo, the message for empty list is made disappeared by calling `checkEmptyTodo()` function. 
-```jquery
+```javascript
 function checkEmptyTodo (noTodo = true){
     if(noTodo){
         $('#noList').fadeIn(700, function(){
@@ -75,7 +75,7 @@ function checkEmptyTodo (noTodo = true){
 ### 2. Marking a ToDo as completed  
 
 When the checkbox is pressed, the ToDo is marked as completed.
-```jquery
+```javascript
 $('#ulTodo').on('click', "li input[type='checkbox']", function(){
     $(this).siblings("span").toggleClass('completedTodo');
 })
@@ -90,7 +90,7 @@ The css class `completedTodo` contains some effects.
 
 Let's display an editable text filled `input[type='text']`, which will be prefilled with the existing todo.
 
-```jquery
+```javascript
 $('#ulTodo').on('click', 'li i:nth-last-child(1)', function(event){
     isEditOn = true;
     $(this).siblings("button").css({display: 'inline-block', width: '21%', opacity: '1.0'});
@@ -109,7 +109,7 @@ $('#ulTodo').on('click', 'li i:nth-last-child(1)', function(event){
 > Read edit data and update the todo
 
 A new `li` is created using the text from `input[type='text']`, and then append to the `ul` at the same position where the li previously was.
-```jquery
+```javascript
 $('#ulTodo').on('click', 'li button', function(event){
     isEditOn = false;
     var inp = "<input type='checkbox'>";
@@ -130,7 +130,7 @@ $('#ulTodo').on('click', 'li button', function(event){
 ### 4. Delete a ToDo  
 
 This will remove the `li` from the unordered list and refresh the list.
-```jquery
+```javascript
 $('#ulTodo').on('click', 'li i:nth-last-child(2)', function(){
     $(this).parent().fadeOut(700, function(){
         $(this).remove();
@@ -150,7 +150,7 @@ $('#ulTodo').on('click', 'li i:nth-last-child(2)', function(){
 
 This function will display flash message on different events.
 
-```jquery
+```javascript
 function doneMessage(msg, _callback){  // this function shows a slide up message when a new todo is added
     $('body').toggleClass('ji');
     $('#message p').text(msg);
@@ -171,7 +171,7 @@ function doneMessage(msg, _callback){  // this function shows a slide up message
 > addScrollBar() 
 
 This function will display a scrollbar when the `ul` has more than 5 list item. 
-```jquery
+```javascript
 function addScrollBar(){
     if( $('#ulTodo li').length >= 6 ){
         $('#ulTodo').addClass('scrolBar');
@@ -181,6 +181,7 @@ function addScrollBar(){
     }
 }
 ```
+
 
 
 
