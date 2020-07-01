@@ -1,6 +1,6 @@
 ## **To-Do List** - a JavaScript based project
 
-This app is designed based on `JavaScript` using `jQuery`. The feature of this app is:  
+This app is designed based on **`JavaScript`** using **`jQuery`**. The feature of this app is:  
 1. [Adding new ToDo](#1-adding-new-todo)  
 2. [Mark the ToDo that is completed](#2-mark-the-todo-that-is-completed)  
 3. [Edit a ToDo](#3-edit-a-todo)  
@@ -53,7 +53,7 @@ $('#ulTodo li:last-child span').text( $('#inputContainer input').val() );
 
 > Hiding empty list message  
 
-After adding new todo, the message for empty list is made disappeared by calling `checkEmptyTodo()` function. 
+After adding new todo, the message for empty list is made disappeared by calling **`checkEmptyTodo()`** function. 
 ```javascript
 function checkEmptyTodo (noTodo = true){
     if(noTodo){
