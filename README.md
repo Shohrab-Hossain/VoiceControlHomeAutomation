@@ -1,10 +1,10 @@
 ## **To-Do List** - a JavaScript based project
 
 This app is designed based on `JavaScript` using `jQuery`. The feature of this app is:  
-1. [Adding new ToDo](#adding-new-todo)  
-2. [Mark the ToDo that is completed](#mark-the-todo-that-is-completed)  
-3. [Edit a ToDo](#edit-a-todo)  
-4. [Delete a ToDo](#delete-a-todo)  
+1. [Adding new ToDo](#1-adding-new-todo)  
+2. [Mark the ToDo that is completed](#2-mark-the-todo-that-is-completed)  
+3. [Edit a ToDo](#3-edit-a-todo)  
+4. [Delete a ToDo](#4-delete-a-todo)  
 
 &nbsp;
 
@@ -181,9 +181,6 @@ function addScrollBar(){
     }
 }
 ```
-
-
-
 
 
 
