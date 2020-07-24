@@ -181,13 +181,13 @@ function addScrollBar(){
     }
 }
 ```
+<hr>
 
 &nbsp;
 &nbsp;
-
 
 ## Check the project Live
-> [To-Dolistapp](www.github.com)
+> [To-Do list app](http://github.com)
 
 
 
